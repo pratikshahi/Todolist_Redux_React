@@ -27,7 +27,7 @@ export default function TodoItem({ props }) {
   return (
     <div>
       <li>
-        {props}
+        <span className={classes.text}>{props}</span>
         <span className={classes.button1}>
           <Fab size="small" onClick={() => deleteTask(props)}>
             <DeleteForeverIcon />

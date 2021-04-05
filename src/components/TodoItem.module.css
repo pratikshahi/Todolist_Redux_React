@@ -4,10 +4,13 @@ li {
   padding: 0.5rem;
   justify-content: space-between;
 }
+.text {
+  margin-right: 9rem;
+}
 .button1 {
   position: absolute;
   top: 0;
-  right: 20%;
+  right: 4rem;
   display: inline-block;
 }
 .button2 {
