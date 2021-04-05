@@ -13,7 +13,16 @@ function taskReducer(state = initialData, action) {
         ...state,
         taskItems: state.taskItems.filter((task) => task !== action.payload),
       };
-
+    case "EDIT_TASK":
+      return {
+        ...state,
+        taskItems: state.taskItems.map((task) => {
+          if (task === action.payload.oldTask) {
+            task = action.payload.newTask;
+          }
+          return task;
+        }),
+      };
     default:
       return state;
   }

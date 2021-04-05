@@ -16,3 +16,6 @@ li {
   right: 0;
   display: inline-block;
 }
+.editArea {
+  margin-top: 1rem;
+}
