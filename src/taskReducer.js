@@ -8,6 +8,11 @@ function taskReducer(state = initialData, action) {
         ...state,
         taskItems: [...state.taskItems, action.payload],
       };
+    case "DELETE_TASK":
+      return {
+        ...state,
+        taskItems: state.taskItems.filter((task) => task !== action.payload),
+      };
 
     default:
       return state;

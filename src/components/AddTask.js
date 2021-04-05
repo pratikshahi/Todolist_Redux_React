@@ -10,6 +10,7 @@ export default function AddTask() {
 
   function AddTask() {
     dispatch({ type: "ADD_TASK", payload: taskName });
+    setTaskName("");
   }
   return (
     <div className={classes.form}>
