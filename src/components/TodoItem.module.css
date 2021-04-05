@@ -1,0 +1,18 @@
+li {
+  text-align: left;
+  position: relative;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+.button1 {
+  position: absolute;
+  top: 0;
+  right: 20%;
+  display: inline-block;
+}
+.button2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+}

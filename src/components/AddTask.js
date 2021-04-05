@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import classes from "./AddTask.module.css";
+import AddIcon from "@material-ui/icons/Add";
+import { Fab } from "@material-ui/core";
 
 export default function AddTask() {
   const [taskName, setTaskName] = useState("");
@@ -13,14 +15,15 @@ export default function AddTask() {
     <div className={classes.form}>
       <input
         type="text"
-        value="taskName"
+        value={taskName}
         onChange={(event) => {
           setTaskName(event.target.value);
         }}
       />
-      <button onClick={AddTask}>
-        <span>Add</span>
-      </button>
+
+      <Fab onClick={AddTask} size="small">
+        <AddIcon />
+      </Fab>
     </div>
   );
 }

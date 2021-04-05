@@ -4,6 +4,7 @@ import { createStore } from "redux";
 import { Provider } from "react-redux";
 import TaskReducer from "./taskReducer";
 import AddTask from "./components/AddTask";
+import TodoList from "./components/TodoList";
 
 function App() {
   const store = createStore(TaskReducer);
@@ -13,6 +14,7 @@ function App() {
       <Provider store={store}>
         <Navbar />
         <AddTask />
+        <TodoList />
       </Provider>
     </div>
   );
